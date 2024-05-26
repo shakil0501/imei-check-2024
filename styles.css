@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)),
+    url('./background.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  width: 100%;
+  height: 55px;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-radius: 9px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(110%);
+}
+.check button {
+  width: 75px;
+  height: 35px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #58629b;
+  color: #fff;
+}
+.check button:hover {
+  background-color: #0c2af8;
+}
+.check input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  color: #fff;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+}
+.output {
+  width: 350px;
+  height: 60px;
+  margin: 20px;
+  top: 90px;
+  background-color: transparent;
+  color: white;
+  display: inline-flex;
+  position: relative;
+}
+#clear {
+  margin-left: 10px;
+  width: 75px;
+  height: 35px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #58629b;
+  color: #fff;
+}
+#clear:hover {
+  background-color: #0c2af8;
+}

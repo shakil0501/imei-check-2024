@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <title>IMEI Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="check">
+        <input
+          id="imei"
+          type="text"
+          placeholder="enter your IMEI"
+          name="IMEI"
+          maxlength="15"
+          onkeypress="return isNumberKey(event)"
+        />
+        <button id="submit" onclick="return displayBox()">Check</button>
+        <button id="clear" onclick="return resetInfo()">Reset</button>
+      </div>
+      <div class="output">
+        <p id="p-class"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
